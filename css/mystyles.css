@@ -1,0 +1,200 @@
+/*
+==================
+Hoja de Estilos
+1. Layout
+2. Generic
+3. Parts of Web
+4. List
+5. Form
+6. Animations
+==================
+*/
+
+/* --- 1. Layout --- */
+body
+{
+  text-align: center;
+  font-size: 25px;
+  font-family: "Roboto Condensed";
+  font-weight: 300;
+  line-height: 1.7;
+}
+
+.header
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar
+{
+  background-color: blue;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.list-tratamientos
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.list-tratamientos figure
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+
+/* --- 2. Generic --- */
+
+.boton-contacto
+{
+  border: 2px solid #FFF;
+  color: #FFF;
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 40px;
+}
+.header
+{
+  height: 450px;
+  background: url(../img/dummy-header.jpg) no-repeat center top;
+  background-size: cover;
+}
+
+.navbar
+{
+  height: 63px;
+  background: #ACC233;
+  border-bottom: 1px dashed #d6e199;
+}
+
+.navbar a
+{
+  color: #FFF;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0 20px;
+  font-size: 20px;
+  font-family: "Stint Ultra Condensed";
+}
+
+ul li
+{
+  list-style-type: none;
+  display: inline-block;
+}
+
+p
+{
+  margin-bottom: 40px;
+}
+
+.title
+{
+  font-size: 60px;
+  font-family: "Stint Ultra Condensed";
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+/* --- 3. Parts of Web --- */
+.content
+{
+  padding: 80px 0;
+}
+
+.who
+{
+  background: #ACC233;
+  color: #fff;
+}
+
+.who p
+{
+  max-width: 1055px;
+  margin: 0 auto;
+}
+.tratamientos
+{
+  background: #566119;
+  color: #fff;
+}
+
+.tarifas
+{
+  background: url(../img/dummy-tarifas.jpg) no-repeat center top;
+  background-size: cover;
+  color: #fff;
+  text-align: left;
+}
+
+.tarifas .contenedor
+{
+  max-width: 1055px;
+  margin: 0 auto;
+}
+
+.tarifas p
+{
+  max-width: 450px;
+}
+
+.localizacion
+{
+  color: #566119;
+  padding-bottom: 0;
+}
+
+.localizacion .map img
+{
+  max-width: 100%;
+  width: 100%;
+}
+
+/* --- 4. Lists --- */
+.list-tratamientos figure
+{
+  position: relative;
+  height: 100px;
+  width: 100px;
+}
+
+.list-tratamientos figure::after
+{
+  display: block;
+  content: " ";
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #fff;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+.list-tratamientos img
+{
+  position: relative;
+  z-index: 1;
+}
+
+.list-tratamientos li
+{
+  padding: 0 30px;
+}
+
+.list-tratamientos figcaption
+{
+  position: absolute;
+  bottom: -40px;
+  left: 0;
+  right: 0;
+}
